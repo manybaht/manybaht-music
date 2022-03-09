@@ -1,36 +1,4 @@
-﻿# เริ่มต้นเขียนบอทดิสคอร์ด
-
-**Repo อันนี้** ไม่ได้ทำมาเพื่อให้เข้ามา ทำการโหลด Source บอทหลายบาท<br/>
-แล้วเอาไปเปิดโดยไม่สนใจโลกอะไรเลย<br/>
-**Repo อันนี้** จะสอนวิธีการเขียนบอทเบื้องต้น รวมถึงการเริ่มเขียนบอท และการพัฒนาต่อไปให้เท่าบอทหลายบาท
-
-**Repo อันนี้** ใช้ Discord.js เป็นหลัก
-
-หรือหากสนใจ Lib อื่น ๆ ที่ใช้พัฒนาบอทสามารถดูได้ที่<br/>
-[รายชื่อ Lib โดยทาง Discord](https://discord.com/developers/docs/topics/community-resources)
-
-# เริ่มต้น 1
-
-ทำการเขียนบอทให้เข้ารู่สะบบและตอบกลับ "hello"
-
-ทำการติดตั้ง Lib discord.js ใน Folder ที่จะเขียนบอท
-
-```
-npm i discord.js
-```
-
-ทำการสร้างไฟล์ **config.json** แล้วเขียนโค้ด
-
-```
-{
-	"token": "<โทเค็นบอท>"
-}
-```
-
-ทำการสร้างไฟล์ **index.js** แล้วเขียนโค้ด
-
-```js
-//ทำการโหลด Lib discord.js
+﻿//ทำการโหลด Lib discord.js
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
 
@@ -57,4 +25,3 @@ client.on('messageCreate', (m) => {
 });
 
 client.login(token); //login บอทเข้าสู่ระบบ
-```
