@@ -15,24 +15,17 @@ for (const file of commandFiles) {
 }
 //ทำการโหลดไฟล์คำสั่งเข้าบอท
 
-client.once('ready', (bot) => {
-	console.log(bot.user.username, 'is Ready !');
-});
+//ทำการโหลดไฟล์ Event เข้าบอท
+const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
-//รับค่า event interaction
-client.on('interactionCreate', async interaction => {
-	if (!interaction.isCommand()) return;
-
-	const command = client.commands.get(interaction.commandName);
-
-	if (!command) return;
-
-	try {
-		await command.execute(interaction);
-	} catch (error) {
-		console.error(error);
-		await interaction.reply({ content: 'Error trying to executing this command.', ephemeral: true });
+for (const file of eventFiles) {
+	const event = require(`./events/${file}`);
+	if (event.once) {
+		client.once(event.name, (...args) => event.execute(...args));
+	} else {
+		client.on(event.name, (...args) => event.execute(...args));
 	}
-});
+}
+//ทำการโหลดไฟล์ Event เข้าบอท
 
 client.login(token);
