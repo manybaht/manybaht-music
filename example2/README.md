@@ -34,3 +34,6 @@ node index.js
 ```
 
 บอทจะทำการตอบกลับมา
+
+## เริ่มต้น 3 Speedrun Any % เขียนโค้ดบอทเพลง
+[ลุยกันต่อ](https://github.com/manybaht/manybaht-music/tree/main/example3)

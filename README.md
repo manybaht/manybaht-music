@@ -1,5 +1,10 @@
 ﻿# เริ่มต้นเขียนบอทดิสคอร์ด
 
+## เริ่มต้น 2 ทำ Slash Command, Command and Event handler
+[ข้ามไปลุย](https://github.com/manybaht/manybaht-music/tree/main/example2)
+## เริ่มต้น 3 Speedrun Any % เขียนโค้ดบอทเพลง
+[ข้ามไปลุย](https://github.com/manybaht/manybaht-music/tree/main/example3)
+
 **Repo อันนี้** ไม่ได้ทำมาเพื่อให้เข้ามา ทำการโหลด Source บอทหลายบาท<br/>
 แล้วเอาไปเปิดโดยไม่สนใจโลกอะไรเลย<br/>
 **Repo อันนี้** จะสอนวิธีการเขียนบอทเบื้องต้น รวมถึงการเริ่มเขียนบอท และการพัฒนาต่อไปให้เท่าบอทหลายบาท
@@ -59,5 +64,5 @@ client.on('messageCreate', (m) => {
 client.login(token); //login บอทเข้าสู่ระบบ
 ```
 
-## เริ่มต้น 2
+## เริ่มต้น 2 ทำ Slash Command, Command and Event handler
 [ลุยกันต่อ](https://github.com/manybaht/manybaht-music/tree/main/example2)
