@@ -58,3 +58,6 @@ client.on('messageCreate', (m) => {
 
 client.login(token); //login บอทเข้าสู่ระบบ
 ```
+
+## เริ่มต้น 2
+[ลุยกันต่อ](https://github.com/manybaht/manybaht-music/tree/main/example2)
