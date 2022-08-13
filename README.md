@@ -61,4 +61,3 @@ client.login(token); //login บอทเข้าสู่ระบบ
 
 [เริ่มต้น 2 ทำ Slash Command, Command and Event handler](https://github.com/manybaht/manybaht-music/tree/main/example2)<br/>
 [เริ่มต้น 3 Speedrun Any % เขียนโค้ดบอทเพลง](https://github.com/manybaht/manybaht-music/tree/main/example3)<br/>
-[Optimize บอทเพลง รองรับดิสจำนวนมาก](https://github.com/manybaht/manybaht-music/tree/main/optimize_bot)
