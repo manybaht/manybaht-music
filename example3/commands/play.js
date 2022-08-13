@@ -12,7 +12,7 @@ module.exports = {
             ),
     async execute(interaction) {
         const query = interaction.options.getString("music");
-        if (!query) interaction.reply("กรุณาระบุเพลง");
+        if (!query) return interaction.reply("กรุณาระบุเพลง");
 
         const res = await interaction.client.manager.search(
             query,
